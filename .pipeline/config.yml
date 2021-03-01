@@ -9,3 +9,4 @@ steps:
        org: '46172fdf-b63a-4ffd-ae59-7de16e2fa184'
        space: 'dev'
        credentialsId: 'CF_CREDENTIALSID'
+       apiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
