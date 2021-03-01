@@ -10,4 +10,4 @@ steps:
        space: 'dev'
        credentialsId: 'CF_CREDENTIALSID'
        apiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
-       verbose: true
+       verbose: 'true'
