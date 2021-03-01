@@ -7,7 +7,7 @@ node() {
   stage('build') {
     mtaBuild script: this
 }   
-    stage('deploy') {
+  stage('deploy') {
     cloudFoundryDeploy script: this
 }
 }
