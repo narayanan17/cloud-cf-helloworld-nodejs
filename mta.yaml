@@ -5,6 +5,5 @@ description: A Hello World sample application
 provider: SAP Sample generator
 modules:
   - name: piper.node.hello.world
-    type: nodejs
-    buildpack: 'https://github.com/cloudfoundry/nodejs-buildpack/releases/download/v1.6.21/nodejs-buildpack-v1.6.21.zip'
+    type: nodejs    
     path: .
