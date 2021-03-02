@@ -220,8 +220,7 @@ steps:
       deployTool: 'mtaDeployPlugin'
     maven:
       deployTool: 'cf_native'
-    
-    :
+    npm:
       deployTool: 'cf_native'
     docker:
       deployTool: 'cf_native'
