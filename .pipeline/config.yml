@@ -5,7 +5,8 @@
 
 #Project Setup
 general:
-  collectTelemetryData: true 
+  buildTool: 'npm'
+  collectTelemetryData: true  
   logFormat: 'plain'
   changeManagement:
     type: 'NONE' # SOLMAN, CTS, NONE
