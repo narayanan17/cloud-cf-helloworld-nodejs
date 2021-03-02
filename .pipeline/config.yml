@@ -15,7 +15,7 @@ general:
     clientOpts: ''
     credentialsId: 'CM'
     git:
-      from: 'origin/master'
+      from: 'origin/sap-app'
       to: 'HEAD'
       format: '%b'
     solman:
@@ -61,7 +61,7 @@ general:
   manualConfirmation: true
   manualConfirmationMessage: 'Shall we proceed to Promote & Release?'
   manualConfirmationTimeout: 720 # 1 month
-  productiveBranch: 'master'
+  productiveBranch: 'sap-app'
   whitesource:
     serviceUrl: 'https://saas.whitesourcesoftware.com/api'
   dockerPullImage: true
@@ -378,7 +378,7 @@ steps:
     stashExcludes:
       stashBack: '.pipeline/** whitesourceExecuteScan_*.* whitesource-reports/**'
   pipelineExecute:
-    branch: 'master'
+    branch: 'sap-app'
     path: 'Jenkinsfile'
     credentialsId: ''
   pipelineRestartSteps:
