@@ -5,7 +5,7 @@
 
 #Project Setup
 general:
-  collectTelemetryData: true
+  collectTelemetryData: true 
   logFormat: 'plain'
   changeManagement:
     type: 'NONE' # SOLMAN, CTS, NONE
@@ -14,7 +14,7 @@ general:
     clientOpts: ''
     credentialsId: 'CM'
     git:
-      from: 'origin/master'
+      from: 'sap-app'
       to: 'HEAD'
       format: '%b'
     solman:
@@ -60,7 +60,7 @@ general:
   manualConfirmation: true
   manualConfirmationMessage: 'Shall we proceed to Promote & Release?'
   manualConfirmationTimeout: 720 # 1 month
-  productiveBranch: 'master'
+  productiveBranch: 'sap-app'
   whitesource:
     serviceUrl: 'https://saas.whitesourcesoftware.com/api'
   dockerPullImage: true
@@ -196,7 +196,7 @@ steps:
     archive: false
   cloudFoundryDeploy:
     cloudFoundry:
-      apiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
+      apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
     apiParameters: ''
     loginParameters: ''
     deployType: 'standard'
@@ -377,7 +377,7 @@ steps:
     stashExcludes:
       stashBack: '.pipeline/** whitesourceExecuteScan_*.* whitesource-reports/**'
   pipelineExecute:
-    branch: 'master'
+    branch: 'sap-app'
     path: 'Jenkinsfile'
     credentialsId: ''
   pipelineRestartSteps:
