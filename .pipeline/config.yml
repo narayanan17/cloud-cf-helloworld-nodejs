@@ -5,7 +5,7 @@
 
 #Project Setup
 general:
-  buildTool: 'docker'
+  buildTool: 'maven'
   collectTelemetryData: true  
   logFormat: 'plain'
   changeManagement:
