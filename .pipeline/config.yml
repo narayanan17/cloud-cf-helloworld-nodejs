@@ -5,7 +5,7 @@
 
 #Project Setup
 general:
-  buildTool: 'maven'
+  buildTool: 'npm'
   collectTelemetryData: true  
   logFormat: 'plain'
   changeManagement:
