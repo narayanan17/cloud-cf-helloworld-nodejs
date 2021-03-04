@@ -5,7 +5,7 @@
 
 #Project Setup
 general:
-  buildTool: 'npm'
+  buildTool: 'docker'
   collectTelemetryData: true  
   logFormat: 'plain'
   changeManagement:
